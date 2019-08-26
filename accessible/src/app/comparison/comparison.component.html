@@ -1,0 +1,966 @@
+<ul class="main-nav__menu-list">
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="links">Links</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="images">Images</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="inputs">Inputs</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="lists">Lists</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="iFrames">iFrames</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="tables">Tables</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="color">Color</a>
+  </li>
+  <!-- <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="timing">Timing</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="navigation">Navigation</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="forms">Forms</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="media">Media</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="wording">Wording</a>
+  </li>
+  <li class="main-nav__menu-item">
+    <a [routerLink]="['/comparison']" fragment="alternatives">Alternatives</a>
+  </li> -->
+</ul>
+
+
+<hr>
+
+<section id="lists" class="#about-section">
+  <h2> LISTS </h2>
+  <table border="1">
+    <tr>
+      <th>Accessible</th>
+      <th>Non-Accessible</th>
+    </tr>
+    <tr>
+      <td>
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item">
+            <a href="#about-section">About</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="#contact-section">Contact</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a href="#visit-section">Visit</a>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <div class="main-nav__menu-list">
+          <span class="main-nav__menu-item">
+            <a href="#about-section">About</a>
+          </span><br/>
+          <span class="main-nav__menu-item">
+            <a href="#contact-section">Contact</a>
+          </span><br/>
+          <span class="main-nav__menu-item">
+            <a href="#visit-section">Visit</a>
+          </span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+                <code>
+                  &lt;ul class="main-nav__menu-list"&gt;
+
+                    &lt;li class="main-nav__menu-item"&gt;
+                      &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="main-nav__menu-item"&gt;
+                      &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="main-nav__menu-item"&gt;
+                      &lt;a href="#visit-section">Visit&lt;/a&gt;
+                    &lt;/li&gt;
+
+                  &lt;/ul&gt;                          
+                </code>
+              </pre>
+      </td>
+      <td>
+        <pre>
+                  <code>
+              &lt;div class="main-nav__menu-list"&gt;
+
+                  &lt;span class="main-nav__menu-item"&gt;
+                       &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                  &lt;/span&gt;
+
+                  &lt;span class="main-nav__menu-item"&gt;
+                       &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                  &lt;/span&gt;
+
+                  &lt;span class="main-nav__menu-item"&gt;
+                       &lt;a href="#visit-section"&gt;Visit&lt;/a&gt;
+                  &lt;/span&gt;
+
+             &lt;/div&gt;
+             </code>
+             </pre>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section id="images" class="#contact-section">
+  <h2> IMAGES </h2>
+  <table border="1">
+    <tr>
+      <th>Accessible</th>
+      <th>Non-Accessible</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="assets/img/test.jpg" alt="" class="banner__image">
+      </td>
+      <td>
+        <img src="assets/img/test.jpg" class="banner__image">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+                  <code>
+                      &lt;img src="assets/img/test.jpg" alt="" class="banner__image"&gt;&lt;/img&gt;                         
+                  </code>
+                </pre>
+      </td>
+      <td>
+        <pre>
+                    <code>
+                        &lt;img src="assets/img/test.jpg" class="banner__image"&gt;&lt;/img&gt;
+               </code>
+               </pre>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section id="inputs" class="#visit-section">
+  <h2> INPUTS </h2>
+  <table border="1">
+    <tr>
+      <th>Accessible</th>
+      <th>Non-Accessible</th>
+    </tr>
+    <tr>
+      <td>
+        <label for="email" class="contact-form__label">Email (required)</label>
+
+        <input id="email" class="contact-form__input" name="email" type="email" required autocomplete="email">
+
+      </td>
+      <td>
+        <span class="contact-form__label">Email</span>
+        <input id="email" name="email" class="contact-form__input">
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+                      <code>
+&lt;!-- Method #1 - Explicit --&gt;
+&lt;label for="email" class="contact-form__label"&gt;Email (required)&lt;/label&gt;
+
+&lt;input id="email" class="contact-form__input" 
+name="email" type="email" required autocomplete="email"&gt;
+
+
+&lt;!-- Method #2 - Implicit --&gt;
+&lt;label class="contact-form__label"&gt; 
+Phone 
+&lt;input class="contact-form__input" name="email" 
+type="email" required autocomplete="email"&gt;
+&lt;/label&gt;                         
+                      </code>
+                    </pre>
+      </td>
+      <td>
+        <pre>
+                        <code>
+                            &lt;span class="contact-form__label"&gt;Email&lt;/span&gt;
+                            &lt;input id="email" name="email" class="contact-form__input"&gt;
+                            
+                   </code>
+                   </pre>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section id="links" class="#visit-section">
+  <h2> LINKS </h2>
+  <table border="1">
+    <tr>
+      <th>Accessible</th>
+      <th>Non-Accessible</th>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG Quick Reference</a>
+      </td>
+      <td>
+        <a href="#" onmouseover="dropdownmenu()">WCAG Quick Reference</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+                  <code>
+                      &lt;a href="https://www.w3.org/WAI/WCAG21/quickref/"&gt;WCAG Quick Reference&lt;/a&gt;                        
+                  </code>
+                </pre>
+      </td>
+      <td>
+        <pre>
+                    <code>
+                        &lt;a href="#" onmouseover="dropdownmenu()"&gt;WCAG Quick Reference&lt;/a&gt;
+               </code>
+               </pre>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section id="iFrames" class="#visit-section">
+  <h2> IFRAMES </h2>
+  <table border="1">
+    <tr>
+      <th>Accessible</th>
+      <th>Non-Accessible</th>
+    </tr>
+    <tr>
+      <td>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.929570497162!2d-81.66624658536429!3d30.324521081781278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b713f91dc805%3A0xa6b77d810f886a26!2sCSX%20Corporation!5e0!3m2!1sen!2sus!4v1566782073631!5m2!1sen!2sus" title="CSX Downtown" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+      </td>
+      <td>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.929570497162!2d-81.66624658536429!3d30.324521081781278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b713f91dc805%3A0xa6b77d810f886a26!2sCSX%20Corporation!5e0!3m2!1sen!2sus!4v1566782073631!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+                  <code>
+                      &lt;iframe id="map" src="https://www.google.com/maps/embed?..." 
+                      title="CSX Downtown" width="400" height="300" frameborder="0" 
+                      style="border:0;" allowfullscreen=""&gt;&lt;/iframe&gt; 
+                        
+                  </code>
+                </pre>
+      </td>
+      <td>
+        <pre>
+                    <code>
+                        &lt;iframe id="map" src="https://www.google.com/maps/embed?..." 
+                        width="400" height="300" frameborder="0" style="border:0;" 
+                        allowfullscreen=""&gt;&lt;/iframe&gt;         
+               </code>
+               </pre>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section id="tables" class="#visit-section">
+  <h2> TABLES </h2>
+  <table border="1">
+    <tr>
+      <th>Accessible</th>
+      <th>Non-Accessible</th>
+    </tr>
+    <tr>
+      <td>
+        <table class="conformance-table" border="1">
+          <caption class="conformance-table__caption">Conformance Levels</caption>
+          <thead>
+            <tr>
+              <th scope="col">Level</th>
+              <th scope="col">Conformance Type</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">A</th>
+              <td>Minimum</td>
+              <td>The most basic web accessibility features</td>
+            </tr>
+            <tr>
+              <th scope="row">AA</th>
+              <td>Mid-range</td>
+              <td>Deals with the biggest and most common barriers</td>
+            </tr>
+            <tr>
+              <th scope="row">AAA</th>
+              <td>Highest</td>
+              <td>The highest level of web accessibility</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <div class="h4">Conformance Levels</div>
+        <table class="conformance-table" border="1">
+          <tr>
+            <td><strong>Level</strong></td>
+            <td><strong>Conformance Type</strong></td>
+            <td><strong>Description</strong></td>
+          </tr>
+          <tr>
+            <td><strong>A</strong></td>
+            <td>Minimum</td>
+            <td>The most basic web accessibility features</td>
+          </tr>
+          <tr>
+            <td><strong>AA</strong></td>
+            <td>Mid-range</td>
+            <td>Deals with the biggest and most common barriers</td>
+          </tr>
+          <tr>
+            <td><strong>AAA</strong></td>
+            <td>Highest</td>
+            <td>The highest level of web accessibility</td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+                  <code>
+                      &lt;table class="conformance-table"&gt;
+                          &lt;caption class="conformance-table__caption"&gt;Conformance Levels&lt;/caption&gt;
+                          &lt;thead&gt;
+                               &lt;tr&gt;
+                                    &lt;th scope="col"&gt;Level&lt;/th&gt;
+                                    &lt;th scope="col"&gt;Conformance Type&lt;/th&gt;
+                                    &lt;th scope="col"&gt;Description&lt;/th&gt;
+                               &lt;/tr&gt;
+                          &lt;/thead&gt;
+                          &lt;tbody&gt;
+                               &lt;tr&gt;
+                                    &lt;th scope="row"&gt;A&lt;/th&gt;
+                                    &lt;td&gt;Minimum&lt;/td&gt;
+                                    &lt;td&gt;The most basic web accessibility features&lt;/td&gt;
+                               &lt;/tr&gt;
+                               &lt;tr&gt;
+                                    &lt;th scope="row"&gt;AA&lt;/th&gt;
+                                    &lt;td &gt;Mid-range&lt;/td&gt;
+                                    &lt;td&gt;Deals with the biggest and most common barriers&lt;/td&gt;
+                               &lt;/tr&gt;
+                               &lt;tr&gt;
+                                    &lt;th scope="row"&gt;AAA&lt;/th&gt;
+                                    &lt;td&gt;Highest&lt;/td&gt;
+                                    &lt;td&gt;The highest level of web accessibility&lt;/td&gt;
+                               &lt;/tr&gt;
+                          &lt;/tbody&gt;
+                     &lt;/table&gt;                                              
+                  </code>
+                </pre>
+      </td>
+      <td>
+        <pre>
+                    <code>
+                        &lt;div class="h4"&gt;Conformance Levels&lt;/div&gt;
+                        &lt;table class="conformance-table"&gt;
+                             &lt;tr&gt;
+                                  &lt;td&gt;&lt;strong&gt;Level&lt;/strong&gt;&lt;/td&gt;
+                                  &lt;td&gt;&lt;strong&gt;Conformance Type&lt;/strong&gt;&lt;/td&gt;
+                                  &lt;td&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                  &lt;td&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+                                  &lt;td&gt;Minimum&lt;/td&gt;
+                                  &lt;td&gt;The most basic web accessibility features&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                  &lt;td&gt;&lt;strong&gt;AA&lt;/strong&gt;&lt;/td&gt;
+                                  &lt;td&gt;Mid-range&lt;/td&gt;
+                                  &lt;td&gt;Deals with the biggest and most common barriers&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                  &lt;td&gt;&lt;strong&gt;AAA&lt;/strong&gt;&lt;/td&gt;
+                                  &lt;td&gt;Highest&lt;/td&gt;
+                                  &lt;td&gt;The highest level of web accessibility&lt;/td&gt;
+                             &lt;/tr&gt;
+                        &lt;/table&gt;                        
+               </code>
+               </pre>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section id="color" class="#visit-section">
+  <h2> COLOR </h2>
+  <table border="1">
+    <tr>
+      <th>Combinations to Avoid</th>
+    </tr>
+    <tr>
+      <td style="color: #008000; text-align: center; background: #FF0000">
+        GREEN and RED
+      </td>
+    </tr>
+    <tr>
+      <td style="color: #008000; text-align: center; background: BROWN">
+        GREEN and BROWN
+      </td>
+    </tr>
+    <tr>
+      <td style="color: BLUE; text-align: center; background: PURPLE">
+        BLUE and PURPLE
+      </td>
+    </tr>
+    <tr>
+      <td style="color:BLUE; text-align: center; background: GREEN">
+        BLUE and GREEN
+      </td>
+    </tr>
+    <tr>
+      <td style="color: LIGHTGREEN; text-align: center; background: YELLOW">
+        LIGHT GREEN and YELLOW
+      </td>
+    </tr>
+    <tr>
+      <td style="color: GREY; text-align: center; background: BLUE">
+        GREY and BLUE
+      </td>
+    </tr>
+    <tr>
+      <td style="color: #008000; text-align: center; background: GREY">
+        GREEN and GREY
+      </td>
+    </tr>
+    <tr>
+      <td style="color: #008000; text-align: center; background: BLACK">
+        GREEN and BLACK
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+      </td>
+      <td>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- <section id="timing" class="#visit-section">
+    <h2> TIMING </h2>
+    <table border="1">
+        <tr>
+            <th>Accessible</th>
+            <th>Non-Accessible</th>
+          </tr>
+          <tr>
+            <td>
+              <ul class="main-nav__menu-list">
+                  <li class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </li>
+             </ul>           
+          </td>
+          <td>
+              <div class="main-nav__menu-list">
+                  <span class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </span>
+             </div> 
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <pre>
+                  <code>
+                    &lt;ul class="main-nav__menu-list"&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#visit-section">Visit&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                    &lt;/ul&gt;                          
+                  </code>
+                </pre>
+        </td>
+        <td>
+                <pre>
+                    <code>
+                &lt;div class="main-nav__menu-list"&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#visit-section"&gt;Visit&lt;/a&gt;
+                    &lt;/span&gt;
+  
+               &lt;/div&gt;
+               </code>
+               </pre>             
+        </td>
+        </tr>
+      </table>
+</section>
+
+<section id="navigation" class="#visit-section">
+    <h2> NAVIGATION </h2>
+    <table border="1">
+        <tr>
+            <th>Accessible</th>
+            <th>Non-Accessible</th>
+          </tr>
+          <tr>
+            <td>
+              <ul class="main-nav__menu-list">
+                  <li class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </li>
+             </ul>           
+          </td>
+          <td>
+              <div class="main-nav__menu-list">
+                  <span class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </span>
+             </div> 
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <pre>
+                  <code>
+                    &lt;ul class="main-nav__menu-list"&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#visit-section">Visit&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                    &lt;/ul&gt;                          
+                  </code>
+                </pre>
+        </td>
+        <td>
+                <pre>
+                    <code>
+                &lt;div class="main-nav__menu-list"&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#visit-section"&gt;Visit&lt;/a&gt;
+                    &lt;/span&gt;
+  
+               &lt;/div&gt;
+               </code>
+               </pre>             
+        </td>
+        </tr>
+      </table>
+</section>
+
+<section id="forms" class="#visit-section">
+    <h2> FORMS </h2>
+    <table border="1">
+        <tr>
+            <th>Accessible</th>
+            <th>Non-Accessible</th>
+          </tr>
+          <tr>
+            <td>
+              <ul class="main-nav__menu-list">
+                  <li class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </li>
+             </ul>           
+          </td>
+          <td>
+              <div class="main-nav__menu-list">
+                  <span class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </span>
+             </div> 
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <pre>
+                  <code>
+                    &lt;ul class="main-nav__menu-list"&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#visit-section">Visit&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                    &lt;/ul&gt;                          
+                  </code>
+                </pre>
+        </td>
+        <td>
+                <pre>
+                    <code>
+                &lt;div class="main-nav__menu-list"&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#visit-section"&gt;Visit&lt;/a&gt;
+                    &lt;/span&gt;
+  
+               &lt;/div&gt;
+               </code>
+               </pre>             
+        </td>
+        </tr>
+      </table>
+</section>
+
+<section id="media" class="#visit-section">
+    <h2> MEDIA </h2>
+    <table border="1">
+        <tr>
+            <th>Accessible</th>
+            <th>Non-Accessible</th>
+          </tr>
+          <tr>
+            <td>
+              <ul class="main-nav__menu-list">
+                  <li class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </li>
+             </ul>           
+          </td>
+          <td>
+              <div class="main-nav__menu-list">
+                  <span class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </span>
+             </div> 
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <pre>
+                  <code>
+                    &lt;ul class="main-nav__menu-list"&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#visit-section">Visit&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                    &lt;/ul&gt;                          
+                  </code>
+                </pre>
+        </td>
+        <td>
+                <pre>
+                    <code>
+                &lt;div class="main-nav__menu-list"&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#visit-section"&gt;Visit&lt;/a&gt;
+                    &lt;/span&gt;
+  
+               &lt;/div&gt;
+               </code>
+               </pre>             
+        </td>
+        </tr>
+      </table>
+</section>
+
+<section id="wording" class="#visit-section">
+    <h2> WORDING </h2>
+    <table border="1">
+        <tr>
+            <th>Accessible</th>
+            <th>Non-Accessible</th>
+          </tr>
+          <tr>
+            <td>
+              <ul class="main-nav__menu-list">
+                  <li class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </li>
+             </ul>           
+          </td>
+          <td>
+              <div class="main-nav__menu-list">
+                  <span class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </span>
+             </div> 
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <pre>
+                  <code>
+                    &lt;ul class="main-nav__menu-list"&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#visit-section">Visit&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                    &lt;/ul&gt;                          
+                  </code>
+                </pre>
+        </td>
+        <td>
+                <pre>
+                    <code>
+                &lt;div class="main-nav__menu-list"&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#visit-section"&gt;Visit&lt;/a&gt;
+                    &lt;/span&gt;
+  
+               &lt;/div&gt;
+               </code>
+               </pre>             
+        </td>
+        </tr>
+      </table>
+</section>
+
+<section id="alternatives" class="#visit-section">
+    <h2> ALTERNATIVES </h2>
+    <table border="1">
+        <tr>
+            <th>Accessible</th>
+            <th>Non-Accessible</th>
+          </tr>
+          <tr>
+            <td>
+              <ul class="main-nav__menu-list">
+                  <li class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </li>
+                  <li class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </li>
+             </ul>           
+          </td>
+          <td>
+              <div class="main-nav__menu-list">
+                  <span class="main-nav__menu-item">
+                       <a href="#about-section">About</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#contact-section">Contact</a>
+                  </span>
+                  <span class="main-nav__menu-item">
+                       <a href="#visit-section">Visit</a>
+                  </span>
+             </div> 
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <pre>
+                  <code>
+                    &lt;ul class="main-nav__menu-list"&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                      &lt;li class="main-nav__menu-item"&gt;
+                        &lt;a href="#visit-section">Visit&lt;/a&gt;
+                      &lt;/li&gt;
+  
+                    &lt;/ul&gt;                          
+                  </code>
+                </pre>
+        </td>
+        <td>
+                <pre>
+                    <code>
+                &lt;div class="main-nav__menu-list"&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#about-section"&gt;About&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#contact-section"&gt;Contact&lt;/a&gt;
+                    &lt;/span&gt;
+  
+                    &lt;span class="main-nav__menu-item"&gt;
+                         &lt;a href="#visit-section"&gt;Visit&lt;/a&gt;
+                    &lt;/span&gt;
+  
+               &lt;/div&gt;
+               </code>
+               </pre>             
+        </td>
+        </tr>
+      </table>
+</section> -->
